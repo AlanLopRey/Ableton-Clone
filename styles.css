@@ -1,0 +1,256 @@
+/* RESET */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role=list],
+ol[role=list] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-x: hidden;
+}
+
+.header {
+  display: flex;
+  width: 100%;
+  height: 3.125rem;
+}
+
+.ul-header {
+  width: 70%;
+  height: 50px;
+  display: flex;
+  column-gap: 1.875rem;
+  list-style: none;
+}
+.ul-account {
+  height: 50px;
+  display: flex;
+  column-gap: 1.875rem;
+  list-style: none;
+}
+.nav-top {
+  display: flex;
+  align-items: center;
+  height: 3.75rem;
+  width: 100%;
+}
+.nav-top__ul {
+  display: flex;
+  height: 3.75rem;
+  align-items: center;
+  column-gap: 1.875rem;
+  list-style: none;
+}
+.img-header {
+  width: 80vw;
+  overflow: hidden;
+}
+
+.sect-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  margin-bottom: 8rem;
+}
+.sect-header__h2 {
+  margin-bottom: 40px;
+  font-size: 1.6rem;
+  line-height: 1.7;
+  letter-spacing: 0.0938rem;
+}
+.sect-header__img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 10vw;
+  aspect-ratio: 16/9;
+  background-image: url(./images/img-header.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  margin-bottom: 8rem;
+}
+.sect-header__p {
+  font-size: 1.2rem;
+}
+
+.blue-notation {
+  color: #0000ff;
+}
+
+.text-wrapper {
+  width: 79.3%;
+}
+
+.ableton {
+  color: #ff764d;
+  font-weight: bold;
+}
+
+.imgs {
+  position: relative;
+  left: 2rem;
+  min-width: 100vw;
+  height: 115vh;
+  display: grid;
+  grid-template-rows: 1fr 3fr 1fr;
+  grid-template-columns: 2fr 1fr 2fr 1fr;
+  margin-bottom: 3rem;
+  margin-bottom: 8rem;
+}
+.imgs__yellow {
+  background-color: #fbffa7;
+  grid-column: 2/5;
+  grid-row: 1/5;
+  position: relative;
+  left: 18vw;
+}
+.imgs__left {
+  position: relative;
+  min-width: 20vw;
+  height: 40vh;
+  background-image: url(./images/2.jpg);
+  background-size: cover;
+  aspect-ratio: 16/9;
+  grid-row: 2/3;
+  grid-column: 3/4;
+  align-self: center;
+  justify-self: end;
+  margin-left: 35em;
+  top: 2vh;
+}
+.imgs__right {
+  background-color: rgb(67, 67, 168);
+  background-image: url(./images/3.jpg);
+  background-size: cover;
+  position: relative;
+  min-width: 40vw;
+  height: 70vh;
+  left: 7vw;
+  grid-row: 2/3;
+  grid-column: 1/3;
+}
+
+.sect {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 8rem;
+}
+.sect__h2 {
+  font-size: 1.6rem;
+  line-height: 1.7;
+  letter-spacing: 0.0938rem;
+  margin-bottom: 40px;
+}
+.sect__p {
+  font-size: 1.2rem;
+}
+
+.img-video {
+  width: 80%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.vid-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+}
+
+.video {
+  width: 77.3%;
+  position: relative;
+  margin-bottom: 8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 0;
+}
+
+.play-btn {
+  position: absolute;
+  top: 16vw;
+  border-radius: 50%;
+  width: 5rem;
+  height: 5rem;
+  z-index: 10;
+  background-color: #0000ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.play-btn::before {
+  content: "";
+  position: absolute;
+  width: 28px;
+  height: 28px;
+  left: 29px;
+  background-color: white;
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  transform: rotate(90deg);
+}
+
+/*# sourceMappingURL=styles.css.map */
