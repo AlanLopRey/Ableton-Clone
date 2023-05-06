@@ -275,20 +275,22 @@ body {
   position: relative;
   right: 1rem;
   width: 85%;
-  height: 160vh;
+  height: 157vh;
   margin-bottom: 8rem;
 }
 .lg-g__green {
   background-color: #b6ffc0;
   grid-row: 1/6;
   grid-column: 1/3;
+  position: relative;
+  right: 10rem;
 }
 .lg-g__left-top {
   position: relative;
-  width: 380px;
-  height: 300px;
-  left: 11rem;
-  bottom: 3rem;
+  width: 430px;
+  height: 330px;
+  left: 9rem;
+  bottom: 6rem;
   z-index: 10;
   background-color: papayawhip;
   grid-row: 2/3;
@@ -297,11 +299,11 @@ body {
   background-size: cover;
 }
 .lg-g__left-bottom {
-  width: 380px;
-  height: 300px;
+  width: 430px;
+  height: 330px;
   position: relative;
-  left: 11rem;
-  bottom: 3rem;
+  left: 9rem;
+  bottom: 2rem;
   z-index: 10;
   background-color: papayawhip;
   grid-row: 4/5;
@@ -313,10 +315,10 @@ body {
 .lg-g__right {
   background-color: lightblue;
   position: relative;
-  width: 420px;
-  height: 500px;
+  width: 540px;
+  height: 550px;
   overflow: auto;
-  left: 22rem;
+  left: 16rem;
   bottom: 9rem;
   grid-row: 3/4;
   grid-column: 2/3;
