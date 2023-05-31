@@ -154,7 +154,7 @@ body {
     font-size: 1.6rem;
     line-height: 1.7;
     letter-spacing: 0.0938rem;
-    margin-bottom: 40px;
+    margin-bottom: 1rem;
   }
   &__p {
     font-size: 1.2rem;
@@ -214,7 +214,8 @@ body {
   text-align: left;
   bottom: 7rem;
   left: 1rem;
-
+  font-size: 0.7rem;
+  font-weight: 600;
   width: 77.3%;
 }
 
@@ -283,4 +284,50 @@ body {
     background-image: url(./images/6.webp);
     background-size: cover;
   }
+}
+
+.img-vid2 {
+  margin-bottom: 16rem;
+  position: relative;
+  &__img {
+    width: 80vw;
+    object-fit: cover;
+    aspect-ratio: 16/9;
+  }
+}
+
+.play-btn2 {
+  position: absolute;
+  top: 16vw;
+  border-radius: 50%;
+  width: 5rem;
+  height: 5rem;
+  z-index: 10;
+  background-color: $blue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  &::before {
+    content: "";
+    position: absolute;
+    width: 28px;
+    height: 28px;
+    left: 29px;
+    background-color: white;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    transform: rotate(90deg);
+  }
+}
+
+.small-vid2 {
+  font-size: 0.7rem;
+  font-weight: 600;
+}
+
+.mb-1 {
+  margin-bottom: 1rem;
 }
