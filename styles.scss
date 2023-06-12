@@ -124,50 +124,54 @@ body {
   font-weight: bold;
   font-family: $font-logo;
 }
+.imgs-grid {
+  width: 100vw;
+  display: flex;
+  justify-content: flex-end;
+}
 
 .imgs {
   position: relative;
-  left: 2rem;
-  min-width: 100vw;
-  height: 115vh;
+  // left: 2rem;
+  width: 100vw;
+  height: 58vw;
   display: grid;
   grid-template-rows: 1fr 3fr 1fr;
   grid-template-columns: 2fr 1fr 2fr 1fr;
-  margin-bottom: 3rem;
   margin-bottom: 8rem;
+  align-content: end;
   &__yellow {
     background-color: $light-yellow;
     grid-column: 2/5;
     grid-row: 1/5;
     position: relative;
-    left: 18vw;
+    left: 10vw;
   }
 
   &__left {
     position: relative;
-    min-width: 20vw;
-    height: 40vh;
+    width: 32vw;
+    height: 22vw;
+    left: 8vw;
+    background-color: brown;
     background-image: url(./images/2.jpg);
     background-size: cover;
-    aspect-ratio: 16/9;
-    // object-fit: cover;
+    background-position: center;
     grid-row: 2/3;
     grid-column: 3/4;
     align-self: center;
     justify-self: end;
-    margin-left: 35em;
-    top: 2vh;
   }
 
   &__right {
     background-color: rgb(67, 67, 168);
     background-image: url(./images/3.jpg);
     background-size: cover;
-    // object-fit: cover;
     position: relative;
-    min-width: 40vw;
-    height: 70vh;
-    left: 7vw;
+    width: 40vw;
+    height: 43vw;
+    // top: 5vmin;
+    left: 10vw;
     grid-row: 2/3;
     grid-column: 1/3;
   }
@@ -224,8 +228,8 @@ body {
   position: absolute;
   top: 16vw;
   border-radius: 50%;
-  width: 5rem;
-  height: 5rem;
+  width: 7vw;
+  height: 7vw;
   z-index: 10;
   background-color: $blue;
   display: flex;
@@ -235,9 +239,9 @@ body {
   &::before {
     content: "";
     position: absolute;
-    width: 28px;
-    height: 28px;
-    left: 29px;
+    width: 2.5vw;
+    height: 2.5vw;
+    left: 2.6vw;
     background-color: white;
     clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
     transform: rotate(90deg);
@@ -262,13 +266,13 @@ body {
 
 .lg-g {
   display: grid;
-  grid-template-rows: repeat(5, 32vh);
+  grid-template-rows: repeat(5, 15vw);
   grid-template-columns: 2fr 3fr 2fr;
   justify-content: start;
   position: relative;
   right: 1rem;
-  width: 85%;
-  height: 157vh;
+  width: 100vw;
+  // height: 170vw;
   margin-bottom: 8rem;
   // overflow: auto;
   &__green {
@@ -276,44 +280,44 @@ body {
     grid-row: 1/6;
     grid-column: 1/3;
     position: relative;
-    right: 10rem;
+    right: 15vw;
   }
   &__left-top {
     position: relative;
-    width: 430px;
-    height: 330px;
-    left: 9rem;
-    bottom: 6rem;
+    width: 34vw;
+    height: 25vw;
+    left: 9vw;
+    bottom: 6vw;
     z-index: 10;
-    background-color: papayawhip;
+    background-color: gray;
     grid-row: 2/3;
     grid-column: 1/2;
     background-image: url(./images/5.webp);
     background-size: cover;
   }
   &__left-bottom {
-    width: 430px;
-    height: 330px;
+    width: 34vw;
+    height: 25vw;
     position: relative;
-    left: 9rem;
-    bottom: 2rem;
+    left: 9vw;
+    bottom: 3vw;
     z-index: 10;
-    background-color: papayawhip;
+    background-color: gray;
     grid-row: 4/5;
     grid-column: 1/2;
     background-image: url(./images/8.webp);
     background-size: cover;
     background-repeat: no-repeat;
-    // background-position: top left;
+    background-position: top left;
   }
   &__right {
     background-color: lightblue;
     position: relative;
-    width: 540px;
-    height: 550px;
+    width: 41.5vw;
+    height: 42vw;
     overflow: auto;
-    left: 16rem;
-    bottom: 9rem;
+    left: 17vw;
+    bottom: 13vw;
     grid-row: 3/4;
     grid-column: 2/3;
     background-image: url(./images/6.webp);
@@ -335,8 +339,8 @@ body {
   position: absolute;
   top: 16vw;
   border-radius: 50%;
-  width: 5rem;
-  height: 5rem;
+  width: 7vw;
+  height: 7vw;
   z-index: 10;
   background-color: $blue;
   display: flex;
@@ -349,9 +353,9 @@ body {
   &::before {
     content: "";
     position: absolute;
-    width: 28px;
-    height: 28px;
-    left: 29px;
+    width: 2.5vw;
+    height: 2.5vw;
+    left: 2.5vw;
     background-color: white;
     clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
     transform: rotate(90deg);
@@ -370,11 +374,11 @@ body {
 
 .lg-p {
   display: grid;
-  grid-template-columns: 1fr 3fr 2fr 3fr 2fr;
-  grid-template-rows: 2fr 2fr 5fr 2fr 2fr;
+  grid-template-columns: 9.09vw 27.27vw 18.18vw 27.27vw 9.09vw;
+  grid-template-rows: 10.7692vw 5.3846vw 26.923vw 5.3846vw 10.7692vw;
   justify-content: start;
   position: relative;
-  width: 90%;
+  width: 90vw;
   margin-bottom: 9rem;
   &__pink {
     background-color: $light-pink;
@@ -401,8 +405,9 @@ body {
 .p-wrapper {
   display: flex;
   justify-content: flex-end;
-  width: 100%;
-  height: 145vh;
+  width: 100vw;
+  height: 70vw;
+  margin-bottom: 8rem;
 }
 
 .lg-b {
