@@ -11,12 +11,14 @@ body {
 .header {
   display: flex;
   width: 100%;
-  height: 60px;
+  height: 3.75rem;
   align-items: center;
-  justify-content: space-between;
+  // justify-content: space-around;
   // margin-bottom: 1rem;
 }
-
+.menu-btn {
+  display: none;
+}
 .ul-header {
   width: 70%;
   display: flex;
@@ -25,7 +27,7 @@ body {
   list-style: none;
   &__li {
     font-family: $font-higlight;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     font-weight: 600;
     cursor: pointer;
   }
@@ -38,11 +40,13 @@ body {
 }
 .logo {
   position: relative;
+  z-index: 25;
   margin-right: 1rem;
-  margin-right: 1rem;
-  left: 2.5rem;
+  left: 1.5rem;
   top: 0.2vw;
-  height: 2.1rem;
+  width: 3rem;
+  cursor: pointer;
+  // height: 2.1rem;
 }
 .ul-account {
   display: flex;
@@ -63,25 +67,43 @@ body {
   color: $blue;
   font-size: 1.2rem;
   display: block;
-  width: 140px;
+  width: 8.75rem;
 }
 
 .nav-top {
+  position: sticky;
+  translate: 0 -20vh;
+  top: 0;
+  z-index: 15;
+  background-color: hsla(0, 0%, 0%, 0.454);
   display: flex;
   align-items: center;
   height: 3.75rem;
+  mix-blend-mode: difference;
   width: 100%;
+  transition: 0.6s;
   &__ul {
     display: flex;
     height: 3.75rem;
     align-items: center;
     column-gap: 1.875rem;
     list-style: none;
+    position: relative;
+    right: 1rem;
     &--li {
+      color: white;
       font-family: $font-higlight;
       font-weight: 600;
+      cursor: pointer;
     }
   }
+}
+.menu {
+  display: none;
+}
+
+.visible {
+  translate: 0;
 }
 
 .img-header {
@@ -488,7 +510,7 @@ body {
 }
 
 .link-wrapper {
-  width: 350px;
+  width: 21.875rem;
 }
 
 .link {
@@ -504,11 +526,11 @@ body {
 }
 
 .education-wrapper {
-  width: 350px;
+  width: 21.875rem;
 }
 
 .newsletter-wrapper {
-  width: 480px;
+  width: 30rem;
 }
 
 .newsletter {
@@ -554,7 +576,7 @@ body {
 }
 
 .select-wrapper {
-  width: 350px;
+  width: 21.875rem;
 }
 
 .select {
@@ -593,7 +615,7 @@ body {
 }
 .contact-small {
   display: flex;
-  width: 600px;
+  width: 37.5rem;
   justify-content: space-between;
 }
 .small {
@@ -630,5 +652,87 @@ body {
 
   .ul-account {
     display: none;
+  }
+  .menu-btn {
+    position: relative;
+    z-index: 25;
+    color: #ffffff;
+    mix-blend-mode: difference;
+    display: block;
+    margin-left: 2rem;
+    font-family: $font-higlight;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  .menu {
+    position: absolute;
+    z-index: 20;
+    // top: 0;
+    // bottom: 0;
+    // right: 0;
+    // left: 0;
+    width: 100vw;
+    height: auto;
+    background-color: $blue;
+    transition: transform 0.8s ease;
+    transform: translate(0, -100%);
+    padding-top: 60px;
+    padding-bottom: 60px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.8rem;
+    font-family: $font-body;
+
+    &__nav {
+      margin-left: 1.6rem;
+      display: flex;
+      flex-direction: column;
+      row-gap: 1.3rem;
+    }
+    &__more {
+      margin-left: 1.6rem;
+      display: flex;
+      flex-direction: column;
+      row-gap: 1rem;
+      &--p {
+        font-size: 1.3rem;
+        color: $background-color;
+      }
+      &--a {
+        color: $background-color;
+        text-decoration: none;
+      }
+    }
+    &__main-a {
+      color: $background-color;
+      text-decoration: none;
+      font-size: 1.3rem;
+      font-family: $font-body;
+    }
+  }
+  .small-link {
+    font-size: 1rem;
+  }
+  .is-active {
+    transform: translate(0, 0);
+  }
+
+  .logo {
+    mix-blend-mode: difference;
+    color: #ffffff;
+  }
+  .footer {
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 748px) {
+}
+
+@media screen and (max-width: 550px) {
+  .nav-top {
+    position: relative;
+    translate: 0;
   }
 }

@@ -11,12 +11,24 @@
       href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@100;400;500;700&family=Athiti:wght@200;400;500;600;700&family=PT+Sans:wght@400;700&display=swap"
       rel="stylesheet"
     />
-
+    <link
+      rel="shortcut icon"
+      href="./images/ableton-main-logo.svg"
+      type="image/x-icon"
+    />
     <title>Ableton Clone</title>
   </head>
   <body>
     <header class="header">
-      <img class="logo" src="./images/ableton-main-logo.svg" alt="" />
+      <picture class="logo">
+        <source
+          media="(max-width: 1024px)"
+          srcset="./images/ableton-main-logo-white.svg"
+        />
+        <img src="./images/ableton-main-logo.svg" alt="ableton logo" />
+      </picture>
+      <!-- <img class="logo" src="./images/ableton-main-logo.svg" alt="" /> -->
+      <div class="menu-btn">Menu</div>
       <ul class="ul-header">
         <li class="ul-header__li">Live</li>
         <li class="ul-header__li">Push</li>
@@ -34,8 +46,34 @@
         <li class="ul-account__li">Log <output></output></li>
       </ul>
     </header>
+    <div class="menu">
+      <nav class="menu__nav">
+        <a href="" class="menu__main-a">Live</a>
+        <a href="" class="menu__main-a">Push</a>
+        <a href="" class="menu__main-a">Note</a>
+        <a href="" class="menu__main-a">Link</a>
+        <a href="" class="menu__main-a">Shop</a>
+        <a href="" class="menu__main-a">Packs</a>
+        <a href="" class="menu__main-a">Help</a>
+        <a href="" class="menu__main-a">Try Live for free</a>
+        <a href="" class="menu__main-a small-link">Log in or register</a>
+      </nav>
+      <nav class="menu__more">
+        <p class="menu__more--p">More on Ableton.com:</p>
+
+        <a href="" class="menu__more--a">Blog</a>
+        <a href="" class="menu__more--a">Ableton for the Classroom</a>
+        <a href="" class="menu__more--a"
+          >Ableton for Colleges and Universities</a
+        >
+        <a href="" class="menu__more--a">Certified Training</a>
+        <a href="" class="menu__more--a">About Ableton</a>
+        <a href="" class="menu__more--a">Jobs</a>
+        <a href="" class="menu__more--a">Apprenticeships</a>
+      </nav>
+    </div>
     <div class="separator-header"></div>
-    <nav class="nav-top">
+    <nav id="navbar" class="nav-top visible">
       <ul class="nav-top__ul">
         <li class="nav-top__ul--li">About</li>
         <li class="nav-top__ul--li">Jobs</li>
@@ -609,5 +647,6 @@
         </div>
       </div>
     </footer>
+    <script src="./menu.js"></script>
   </body>
 </html>
