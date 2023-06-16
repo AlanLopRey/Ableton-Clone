@@ -233,6 +233,7 @@ body {
   grid-template-columns: 2fr 1fr 2fr 1fr;
   margin-bottom: 8rem;
   align-content: end;
+  overflow-x: hidden;
 }
 .imgs__yellow {
   background-color: #fbffa7;
@@ -362,6 +363,7 @@ body {
   right: 1rem;
   width: 100vw;
   margin-bottom: 8rem;
+  overflow-x: hidden;
 }
 .lg-g__green {
   background-color: #b6ffc0;
@@ -495,6 +497,7 @@ body {
   width: 100vw;
   height: 70vw;
   margin-bottom: 8rem;
+  overflow-x: hidden;
 }
 
 .lg-b {
@@ -693,6 +696,7 @@ body {
   width: 100vw;
   height: 0;
   border-top: 2px solid #eee;
+  overflow-x: hidden;
 }
 
 .separator {
@@ -700,6 +704,7 @@ body {
   height: 0;
   border-top: 2px solid #eee;
   margin-bottom: 4rem;
+  overflow-x: hidden;
 }
 
 @media screen and (max-width: 1024px) {
@@ -747,6 +752,7 @@ body {
     flex-direction: column;
     row-gap: 1.8rem;
     font-family: "Alegreya Sans", sans-serif;
+    overflow-x: hidden;
   }
   .menu__nav {
     margin-left: 1.6rem;
