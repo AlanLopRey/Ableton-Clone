@@ -673,9 +673,9 @@ body {
     &::after {
       content: "";
       position: relative;
-      width: 2.5vw;
-      height: 2.5vw;
-      left: 2.5vw;
+      width: 9px;
+      height: 9px;
+      left: 9px;
       background-color: white;
       clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
       transform: rotate(90deg);
@@ -751,6 +751,20 @@ body {
     }
     &__blue {
     }
+  }
+
+  .small-footer {
+    margin-top: 2rem;
+    flex-direction: column;
+  }
+  .contact-small {
+    flex-direction: column;
+    row-gap: 1rem;
+  }
+
+  .signature {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
   }
 }
 
