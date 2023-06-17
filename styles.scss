@@ -6,6 +6,7 @@ body {
   flex-direction: column;
   align-items: center;
   background-color: $background-color;
+  overflow-x: hidden;
 }
 .header {
   display: flex;
@@ -740,6 +741,16 @@ body {
   }
   .footer {
     height: auto;
+  }
+  .lg-b {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    aspect-ratio: 1/1;
+    &__img {
+      height: 50vw;
+    }
+    &__blue {
+    }
   }
 }
 

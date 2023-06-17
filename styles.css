@@ -63,6 +63,7 @@ body {
   flex-direction: column;
   align-items: center;
   background-color: #ffffff;
+  overflow-x: hidden;
 }
 
 .header {
@@ -792,6 +793,14 @@ body {
   }
   .footer {
     height: auto;
+  }
+  .lg-b {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    aspect-ratio: 1/1;
+  }
+  .lg-b__img {
+    height: 50vw;
   }
 }
 @media screen and (max-width: 550px) {
