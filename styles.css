@@ -58,6 +58,10 @@ select {
   font: inherit;
 }
 
+html {
+  overflow-x: hidden;
+}
+
 body {
   display: flex;
   flex-direction: column;
